@@ -1,4 +1,5 @@
 @media (max-width: 1200px) {
+    
     .hero-titel {
         font-size: 30px !important;
     }
@@ -40,6 +41,7 @@
     }
 }
 @media (max-width: 850px) {
+    
     .hero-section {
         display: flex !important;
         flex-wrap: wrap !important;
