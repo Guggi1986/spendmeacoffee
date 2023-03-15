@@ -1,7 +1,8 @@
 @media (max-width: 1200px) {
-    herotext  {
-        font-size: 10px;
+    .hero-titel {
+        font-size: 20px;
       }
+      
 
     
     .coffee-image {
