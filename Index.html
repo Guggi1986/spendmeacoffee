@@ -6,35 +6,29 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title class="lang" data-lang-key="HomepageTitel"></title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>   
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="stylesheet" href="css/stylemobile.css">
 </head>
 
 <body>
 
     <!--Header-->
     <header class="header-section">
-        <input type="checkbox" id="hamburger-menu-toggle">
-<label for="hamburger-menu-toggle" class="hamburger-menu-icon">
-    <span class="hamburger-menu-line"></span>
-</label>
-        <div>
-            <img src="img/logo.png">
-        </div>
-        <div class="menu-container">
-            <nav class="menu">
+        <div class="container">
+            <nav>
                 <ul>
-                    <li><a href="#" class="menuhome lang" data-lang-key="MenuHome"></a></li>
-                    <li><a href="Project.html" class="lang" data-lang-key="MenuProject"></a></li>
-                    <li><a href="#" class="lang" data-lang-key="MenuContact"></a></li>
+                    <li><a href="#" class="lang" key="home">Home</a></li>
+                    <li><a href="#" class="lang" key="about">About</a></li>
+                    <li><a href="#" class="lang" key="services">Services</a></li>
+                    <li><a href="#" class="lang" key="contact">Contact</a></li>
                 </ul>
             </nav>
-            <button class="hamburger-menu" onclick="toggleMenu()">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
+            <input type="checkbox" id="hamburger-menu-toggle">
+            <label for="hamburger-menu-toggle" class="hamburger-menu-icon">
+                <span class="hamburger-menu-line"></span>
+            </label>
         </div>
-       <!--  <nav class="menu">
+        <!--  <nav class="menu">
             <ul>
                 <li><a href="#" class="menuhome lang" data-lang-key="MenuHome"></a></li>
                 <li><a href="Project.html" class="lang" data-lang-key="MenuProject"></a></li>
@@ -80,7 +74,6 @@
     </footer>
 
     <!--Scripte-->
-    <script src="js/hamburger-menu.js"></script>
     <script src="js/colors.js"></script>
     <script src="js/language.js"></script>
     <script src="js/comments.js"></script>
