@@ -42,29 +42,7 @@
 }
 @media (max-width: 850px) {
 
-    .nav-main {
-        display: none;
-      }
-    
-      .hamburger-menu {
-        display: block;
-        cursor: pointer;
-        background-color: transparent;
-        border: none;
-        padding: 0;
-      }
-    
-      .bar {
-        display: block;
-        width: 30px;
-        height: 4px;
-        margin: 6px 0;
-        background-color: #333;
-      }
-    
-      .show {
-        display: block !important;
-      }
+ 
     .hero-section {
         display: flex !important;
         flex-wrap: wrap !important;
