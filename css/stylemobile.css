@@ -1,6 +1,3 @@
-.mobile-nav {
-    display: none;
-  }
 @media (max-width: 1200px) {
     
     .hero-titel {
@@ -45,69 +42,7 @@
 }
 
 @media (max-width: 850px) {
-        .menu {
-          display: none !important;
-        }
-      
-        .mobile-nav {
-          display: block !important;
-        }
-      
-        .mobile-nav .hamburger-menu {
-          cursor: pointer;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-around;
-          width: 32px;
-          height: 22px;
-          background: transparent;
-          border: none;
-          padding: 0;
-        }
-      
-        .mobile-nav .hamburger-menu .bar {
-          width: 100%;
-          height: 2px;
-          background: #FFF;
-          transition: all 0.3s;
-        }
-      
-        .mobile-nav .mobile-menu {
-          display: none;
-          position: absolute;
-          top: 100%;
-          left: 50%;
-          transform: translateX(-50%);
-          width: calc(100% + 30px);
-          background-color: #333;
-          z-index: 1000;
-          padding: 15px 0;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          text-align: center;
-        }
-      
-        .mobile-nav .mobile-menu li {
-          margin-bottom: 16px;
-          list-style-type: none;
-        }
-      
-        .mobile-nav .mobile-menu li:last-child {
-          margin-bottom: 0;
-        }
-      
-        .mobile-nav .mobile-menu li a {
-          color: #fff;
-          font-size: 18px;
-          font-family: "Raleway", sans-serif;
-          font-weight: 500;
-          text-decoration: none;
-          transition: color 0.3s;
-        }
-      
-        .mobile-nav .mobile-menu li a:hover {
-          color: #007bff;
-        }
+        
     .hero-section {
         display: flex !important;
         flex-wrap: wrap !important;
