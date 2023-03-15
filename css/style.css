@@ -303,3 +303,20 @@ Footer {
   .social-media a:hover {
 	color: var(--link-color);
   }
+  /* Hamburger menu styles */
+.hamburger-menu-icon {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.hamburger-menu-line {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    margin: 5px;
+    transition: all 0.3s;
+}

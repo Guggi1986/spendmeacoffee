@@ -42,14 +42,31 @@
 }
 
 @media (max-width: 850px) {
-    .menu {
-        display: none;
-    }
-    .hamburger-menu {
-        display: block !important;
-        
-    }
+   /* Hide desktop menu */
+   .header ul {
+    display: none;
+}
 
+/* Show hamburger menu icon */
+.hamburger-menu-icon {
+    display: block;
+}
+
+/* Hamburger menu open styles */
+#hamburger-menu-toggle:checked ~ .header ul {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.header ul li {
+    display: block;
+    padding: 10px;
+}
     .hero-section {
         display: flex !important;
         flex-wrap: wrap !important;
