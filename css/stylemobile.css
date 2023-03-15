@@ -40,6 +40,25 @@
     }
 }
 @media (max-width: 850px) {
+    .header-section{
+        margin: 0;
+    }
+    .hero-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0;
+      }
+    
+      .hero-section-left {
+        grid-column: 1 / span 1;
+      }
+    
+      .hero-section-right {
+        grid-column: 2 / span 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     .hero-titel {
         font-size: 20px !important;
     }
