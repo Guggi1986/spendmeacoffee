@@ -12,25 +12,31 @@
 <body>
 
     <!--Header-->
-    <!-- Hamburger menu -->
-<button class="hamburger-menu" onclick="toggleMenu()">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-</button>
-
     <header class="header-section">
         <div>
             <img src="img/logo.png">
         </div>
+        <nav class="mobile-nav">
+            <button class="hamburger-menu" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="menu mobile-menu" id="mobile-menu">
+                <li><a href="#" class="menuhome lang" data-lang-key="MenuHome"></a></li>
+                <li><a href="Project.html" class="lang" data-lang-key="MenuProject"></a></li>
+                <li><a href="#" class="lang" data-lang-key="MenuContact"></a></li>
+            </ul>
+          </nav>
+          
 
-        <nav class="menu">
+       <!--  <nav class="menu">
             <ul>
                 <li><a href="#" class="menuhome lang" data-lang-key="MenuHome"></a></li>
                 <li><a href="Project.html" class="lang" data-lang-key="MenuProject"></a></li>
                 <li><a href="#" class="lang" data-lang-key="MenuContact"></a></li>
             </ul>            
-        </nav>        
+        </nav>         -->
         <div>
             <button class="btnconnectmetamask lang" data-lang-key="BtnConnectWallet"></button>
         </div>
