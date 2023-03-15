@@ -42,38 +42,7 @@
 }
 
 @media (max-width: 850px) {
-    /* Hide desktop menu */
-    nav ul {
-        display: none;
-    }
-
-    /* Show hamburger menu icon */
-    .hamburger-menu-icon {
-        display: block;
-    }
-
-    /* Hamburger menu open styles */
-    #hamburger-menu-toggle:checked ~ nav ul {
-        display: block;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        background-color: #f1f1f1;
-        text-align: center;
-    }
-
-    nav ul li {
-        display: block;
-        padding: 10px;
-    }
-    .hero-titel {
-      font-size: 20px;
-    }
-  
-    .herotext {
-      font-size: 10px;
-    }
+     
   
     .coffee-image {
       display: flex;
