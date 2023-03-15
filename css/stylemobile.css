@@ -40,36 +40,37 @@
     }
 }
 @media (max-width: 850px) {
-
     .hero-section {
-        flex-direction: column;
-        align-items: center;
-      }
-    
-      .hero-section-left {
-        margin: 50px !important;
-      }
-    
-      .hero-section-right {
-        margin: 50px !important;
-        margin-top: -50px !important;
-      }
+      flex-direction: column;
+    }
+  
+    .hero-section-left {
+      width: 100%;
+      margin: 50px 0;
+      padding: 20px;
+      text-align: center;
+    }
+  
     .hero-titel {
-        font-size: 20px !important;
+      font-size: 20px;
     }
-
+  
     .herotext {
-        font-size: 14px !important;
+      font-size: 10px;
     }
-
+  
     .coffee-image {
-        display: flex;
-        max-width: 180px;
-        height: auto;
-        margin-left: auto;
-        margin-right: -50px;
+      display: flex;
+      max-width: 200px;
+      height: auto;
+      margin: 50px auto;
     }
-    .spender-message-header {
-        font-size: 20px !important;
+  
+    .hero-section-right {
+      width: calc(30% - 50px);
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
     }
-}
+  }
+  
