@@ -41,45 +41,70 @@
     }
 }
 @media (max-width: 850px) {
-
-
-    .menu ul {
-        display: none !important;
-        position: absolute !important;
-        top: 100% !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-        width: calc(100% + 60px) !important;
-        background-color: #333 !important;
-        z-index: 1000 !important;
-        padding: 15px 0 !important;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-      .menu ul li {
-        display: block !important;
-        text-align: center;
-      }
+    @media (max-width: 850px) {
+        .menu {
+          display: none;
+        }
       
-    
-      .hamburger-menu {
-        display: block !important;
-        cursor: pointer !important;
-        background-color: transparent !important;
-        border: none !important;
-        padding: 0 !important;
-      }
-    
-      .bar {
-        display: block !important;
-        width: 30px !important;
-        height: 4px !important;
-        margin: 6px 0 !important;
-        background-color: #333 !important;
-      }
-    
-      .menu ul.show {
-        display: block !important;
-      }
+        .mobile-nav {
+          display: block;
+        }
+      
+        .mobile-nav .hamburger-menu {
+          cursor: pointer;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          width: 32px;
+          height: 22px;
+          background: transparent;
+          border: none;
+          padding: 0;
+        }
+      
+        .mobile-nav .hamburger-menu .bar {
+          width: 100%;
+          height: 2px;
+          background: #FFF;
+          transition: all 0.3s;
+        }
+      
+        .mobile-nav .mobile-menu {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: calc(100% + 30px);
+          background-color: #333;
+          z-index: 1000;
+          padding: 15px 0;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          text-align: center;
+        }
+      
+        .mobile-nav .mobile-menu li {
+          margin-bottom: 16px;
+          list-style-type: none;
+        }
+      
+        .mobile-nav .mobile-menu li:last-child {
+          margin-bottom: 0;
+        }
+      
+        .mobile-nav .mobile-menu li a {
+          color: #fff;
+          font-size: 18px;
+          font-family: "Raleway", sans-serif;
+          font-weight: 500;
+          text-decoration: none;
+          transition: color 0.3s;
+        }
+      
+        .mobile-nav .mobile-menu li a:hover {
+          color: #007bff;
+        }
     .hero-section {
         display: flex !important;
         flex-wrap: wrap !important;
