@@ -1,9 +1,7 @@
 @media (max-width: 1200px) {
-    @media (max-width: 1200px) {
-        p.herotext  {
-          font-size: 10px;
-        }
-    }
+    herotext  {
+        font-size: 10px;
+      }
 
     
     .coffee-image {

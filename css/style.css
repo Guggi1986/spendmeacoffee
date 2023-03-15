@@ -115,7 +115,6 @@
     font-weight: bold;
     font-size: 35px;
     display: inline-block;
-    overflow: hidden;
     border-right: .15em solid var(--text-color);
     white-space: nowrap;
     animation: typing 5s steps(50), blink 1.5s step-end infinite;
