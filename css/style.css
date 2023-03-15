@@ -31,7 +31,7 @@
 
 .menu ul li a {
     transition: color 0.3s;
-    color: #ffffff;
+    color: var(--text-color);
     font-size: 18px;
     font-family: "Raleway", sans-serif;
     font-weight: 500;
@@ -39,7 +39,7 @@
   }
   
   .menu ul li a:hover {
-    color: #007bff;
+    color: var(--buttonhover);
   }
   
   .menu ul li:not(:last-child) {

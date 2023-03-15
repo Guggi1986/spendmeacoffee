@@ -42,7 +42,32 @@
 }
 
 @media (max-width: 850px) {
-     
+    .hero-section {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+      }
+      
+      .hero-section-left {
+        flex: 1 !important;;
+        margin-right: 50px !important;
+        margin-bottom: 0px !important;;
+      }
+      
+      .hero-section-right {
+        flex: 1 !important;;
+        margin-left: 50px !important;
+        margin-top: 0px !important;
+      }
+      
+  
+    .hero-titel {
+      font-size: 20px;
+    }
+  
+    .herotext {
+      font-size: 10px;
+    }
   
     .coffee-image {
       display: flex;
