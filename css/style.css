@@ -48,6 +48,9 @@
 .menu li:first-child:hover a {
     color: var(--buttonhover);
 }
+.menu-container {
+    position: relative;
+  }
 .hamburger-menu {
     display: none;
   }

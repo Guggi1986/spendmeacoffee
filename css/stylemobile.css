@@ -44,22 +44,32 @@
 
     .menu ul {
         display: none !important;
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        width: 100% !important;
+        background-color: #f2f2f2 !important;
+        z-index: 1000 !important;
+      }
+    
+      .menu ul li {
+        display: block !important;
       }
     
       .hamburger-menu {
         display: block !important;
-        cursor: pointer;
-        background-color: transparent;
-        border: none;
-        padding: 0;
+        cursor: pointer !important;
+        background-color: transparent !important;
+        border: none !important;
+        padding: 0 !important;
       }
     
       .bar {
-        display: block;
-        width: 30px;
-        height: 4px;
-        margin: 6px 0;
-        background-color: #333;
+        display: block !important;
+        width: 30px !important;
+        height: 4px !important;
+        margin: 6px 0 !important;
+        background-color: #333 !important;
       }
     
       .menu ul.show {
