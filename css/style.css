@@ -48,7 +48,9 @@
 .menu li:first-child:hover a {
     color: var(--buttonhover);
 }
-
+.hamburger-menu {
+    display: none;
+  }
 /* Connect-Metamask Button */
 .btnconnectmetamask {
     margin-left: 20px;

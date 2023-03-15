@@ -42,17 +42,12 @@
 }
 @media (max-width: 850px) {
 
-    .menu {
-        display: none;
-      }
-    
-      .mobile-nav {
-        display: flex;
-        justify-content: flex-end;
+    .menu ul {
+        display: none !important;
       }
     
       .hamburger-menu {
-        display: block;
+        display: block !important;
         cursor: pointer;
         background-color: transparent;
         border: none;
@@ -67,7 +62,7 @@
         background-color: #333;
       }
     
-      .mobile-menu.show {
+      .menu ul.show {
         display: block !important;
       }
     .hero-section {
