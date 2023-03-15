@@ -34,13 +34,22 @@
     margin: 0 10px;
 }
 
-.menu li a {
-    color: var(--text-color);
-    text-decoration: none;
-    font-weight: bold;
+.menu ul li a {
+    transition: color 0.3s;
+    color: #fff;
     font-size: 18px;
-}
-
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    padding: 16px 0;
+  }
+  
+  .menu ul li a:hover {
+    color: #007bff;
+  }
+  
+  .menu ul li:not(:last-child) {
+    margin-bottom: 8px;
+  }
 .menu li:first-child a {
     color: var(--link-color);
 }
