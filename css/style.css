@@ -1,31 +1,21 @@
 /*Imports*/
 @import url('stylemobile.css');
-/* /*Header Section*/
-/* .header-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    padding: 0 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1;
 
-    background-color: var(--header-background-color);
-} */
-*/
-/* NAV-Menu. */
-
-body {
-    font-family: Arial, sans-serif;
-}
-
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+/*Header*/
 nav {
-    background: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background: var(--header-background-color);
+    color: var(--text-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 80px;
+    position: sticky;
+	top: 0;
 }
 
 nav .mainMenu {
@@ -38,13 +28,14 @@ nav .mainMenu li a {
     padding: 15px;
     text-decoration: none;
     text-transform: uppercase;
-    color: rgb(255, 255, 255);
+    color: var(--text-color);
     font-size: 18px;
     transition: 0.2s ease;
 }
 
 nav .mainMenu li a:hover {
-    background: rgb(255, 94, 0);
+    color: var(--text-color-on-Hover);
+
 }
 
 nav .openMenu {
@@ -62,112 +53,19 @@ nav .mainMenu .closeMenu,
 }
 
 .fa-facebook:hover {
-    color: rgb(0, 110, 255);
-}
-
-.fa-twitter:hover {
-    color: rgb(86, 154, 243);
-}
-
-.fa-instagram:hover {
-    color: rgb(255, 0, 191);
-}
-
-.fa-github:hover {
-    color: rgb(255, 123, 0);
+    color: var(--link-color-on-hover);
 }
 
 nav .logo {
     margin: 6px;
     cursor: pointer;
     text-transform: uppercase;
-}
-
-@media (max-width: 850px) {
-    nav .mainMenu {
-        height: 100vh;
-        position: fixed;
-        top: 0px;
-        right: 0px;
-        left: 0px;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: rgb(0, 0, 0);
-        transition: top 1s ease 0s;
-        display: none;
-    }
-
-    nav .mainMenu .closeMenu {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-
-    nav .openMenu {
-        display: block;
-    }
-
-    nav .mainMenu li a:hover {
-        background: none;
-        color: rgb(255, 123, 0);
-    }
-
-    .icons i {
-        display: inline-block;
-        padding: 12px;
-    }
-}
-
-/* .menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.menu li {
-    margin: 0 10px;
-}
-
-.menu ul li a {
-    transition: color 0.3s;
-    color: var(--text-color);
-    font-size: 18px;
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    padding: 160px 0;
-}
-
-.menu ul li a:hover {
-    color: var(--buttonhover);
-}
-
-.menu ul li:not(:last-child) {
-    margin-bottom: 8px;
-}
-
-.menu li:first-child a {
-    color: var(--link-color);
-}
-
-.menu li:first-child:hover a {
-    color: var(--buttonhover);
-}
-
-.menu-container {
-    position: relative;
-}
-
-.hamburger-menu {
-    display: none;
-} */
-
-/* Connect-Metamask Button */
-.btnconnectmetamask {
     margin-left: 20px;
+}
+
+/* Header/Connect-Metamask Button */
+.btnconnectmetamask {
+    margin-right: 20px;
     background-color: var(--button);
     color: var(--text-color);
     border: none;
@@ -221,14 +119,20 @@ nav .logo {
 }
 
 .hero-titel {
-    color: var(--text-color);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 35px;
     display: inline-block;
+    color: var(--text-color);
+    font-size: 35px;
+    font-family: Arial, sans-serif; 
+    overflow: hidden;
     border-right: .15em solid var(--text-color);
     white-space: nowrap;
-    animation: typing 5s steps(50), blink 1.5s step-end infinite;
+    animation: typing 5s steps(50), blink 1s step-end infinite;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    cursor: default;
+    user-select: none;
 }
 
 @keyframes typing {
@@ -260,6 +164,8 @@ nav .logo {
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
+    cursor: default;
+    user-select: none;
 }
 
 .btnspendmeacoffee {
@@ -325,6 +231,8 @@ nav .logo {
     font-weight: bold;
     font-size: 35px;
     margin-bottom: 50px;
+    cursor: default;
+    user-select: none;
 
 }
 
@@ -350,6 +258,8 @@ nav .logo {
 .comment-list li {
     border-top: 1px solid var(--text-color);
     padding: 10px;
+    cursor: default;
+    user-select: none;
 }
 
 .comment-list li:first-child {
@@ -369,10 +279,11 @@ nav .logo {
 
 Footer {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding: 20px;
+    padding: 0;
     bottom: 0;
     height: 40px;
     background-color: var(--header-background-color);
@@ -383,6 +294,9 @@ Footer {
 
 .copyright {
     text-align: right;
+    margin-right: 20px;
+    cursor: default;
+    user-select: none;
 }
 
 .social-media a {
@@ -405,5 +319,5 @@ Footer {
 }
 
 .social-media a:hover {
-    color: var(--link-color);
+    color: var(--link-color-on-hover);
 }

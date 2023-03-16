@@ -54,27 +54,31 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: rgb(0, 0, 0);
+        background: var(--hamburger-menu-background-color);
         transition: top 1s ease 0s;
         display: none;
-      }
-      nav .mainMenu .closeMenu {
-        display: block;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block !important;
         position: absolute;
         top: 20px;
         right: 20px;
-      }
-      nav .openMenu {
-        display: block;
-      }
-      nav .mainMenu li a:hover {
+    }
+
+    nav .openMenu {
+        display: block !important;
+    }
+/* 
+    nav .mainMenu li a:hover {
         background: none;
         color: rgb(255, 123, 0);
-      }
-      .icons i {
-        display: inline-block;
+    }
+ */
+    .icons i {
+        display: inline-block !important;
         padding: 12px;
-      }
+    }
 
     .hero-section {
         display: flex !important;
