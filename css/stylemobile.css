@@ -10,10 +10,10 @@
 
     .coffee-image {
         display: flex;
-        max-width: 200px;
-        height: auto;
-        margin-left: auto;
-        margin-right: -50px;
+    width: 200px;
+    height: auto;
+    margin-left: -150px;
+
     }
 
     .spender-message-header {
@@ -21,30 +21,10 @@
     }
 }
 
-@media (max-width: 991px) {
-    .hero-titel {
-        font-size: 25px !important;
-    }
 
-    .herotext {
-        font-size: 16px !important;
-    }
-
-    .coffee-image {
-        display: flex;
-        max-width: 180px;
-        height: auto;
-        margin-left: auto;
-        margin-right: -50px;
-    }
-
-    .spender-message-header {
-        font-size: 25px !important;
-    }
-}
-
-@media (max-width: 850px) {
+@media (max-width: 950px) {    
     nav .mainMenu {
+        display: none;
         height: 100vh;
         position: fixed;
         top: 0px;
@@ -56,7 +36,6 @@
         align-items: center;
         background: var(--hamburger-menu-background-color);
         transition: top 1s ease 0s;
-        display: none;
     }
 
     nav .mainMenu .closeMenu {
@@ -69,12 +48,7 @@
     nav .openMenu {
         display: block !important;
     }
-/* 
-    nav .mainMenu li a:hover {
-        background: none;
-        color: rgb(255, 123, 0);
-    }
- */
+
     .icons i {
         display: inline-block !important;
         padding: 12px;
@@ -88,41 +62,39 @@
 
     .hero-section-left {
         flex: 1 !important;
-        ;
         margin-right: 50px !important;
         margin-bottom: 0px !important;
-        ;
     }
 
     .hero-section-right {
         flex: 1 !important;
-        ;
         margin-left: 50px !important;
-        margin-top: 0px !important;
+        margin-top: 0px !important; 
     }
 
-
+    .hero-titel-mobile{
+        display:flex!important;
+        font-size: 30px;
+        color: var(--text-color) !important;
+        margin-bottom: 50px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
     .hero-titel {
-        font-size: 20px;
+        display:none
     }
 
     .herotext {
         font-size: 10px;
     }
 
-    .coffee-image {
-        display: flex;
-        max-width: 200px;
-        height: auto;
-        margin: auto !important;
-        margin-bottom: 30px !important;
-        ;
+   .coffee-image {
+    display: flex !important;
+    width: 200px !important;
+    height: auto !important;
+    margin-left: -150px!important;
+
+
     }
 
-    .hero-section-right {
-        width: calc(30% - 50px);
-        margin: 50px auto;
-        padding: 20px;
-        text-align: center;
-    }
 }

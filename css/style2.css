@@ -1,0 +1,326 @@
+/*Imports*/
+@import url('stylemobile.css');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+/*Header*/
+nav {
+    background: var(--header-background-color);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    position: sticky;
+	top: 0;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-size: 18px;
+    transition: 0.2s ease;
+}
+
+nav .mainMenu li a:hover {
+    color: var(--text-color-on-Hover);
+
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.fa-facebook:hover {
+    color: var(--link-color-on-hover);
+}
+
+nav .logo {
+    margin: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+/* Header/Connect-Metamask Button */
+.btnconnectmetamask {
+    margin-right: 20px;
+    background-color: var(--button);
+    color: var(--text-color);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.btnconnectmetamask::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-image: url("/img/metamask_icon.png");
+    background-size: cover;
+}
+
+.btnconnectmetamask:hover {
+    background-color: var(--buttonhover);
+}
+
+.hero-body-section {
+    background-color: var(--body-Background-Color);
+}
+
+/* Container for complete hero section */
+.hero-section {
+    display: flex;
+    width: 100%;
+}
+
+/* Left hero section */
+.hero-section-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px;
+    background-color: var(--content-Background-Color);
+    text-align: center;
+}
+.hero-titel-mobile{
+    display: none;
+}
+.hero-titel {
+    display: inline-block;
+    color: var(--text-color);
+    font-size: 35px;
+    font-family: Arial, sans-serif; 
+    overflow: hidden;
+    border-right: .15em solid var(--text-color);
+    white-space: nowrap;
+    animation: typing 5s steps(50), blink 1s step-end infinite;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    cursor: default;
+    user-select: none;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--text-color)
+    }
+
+}
+
+.herotext {
+    color: var(--text-color);
+    line-height: 1.5;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: default;
+    user-select: none;
+}
+
+.btnspendmeacoffee {
+    background-color: var(--button);
+    color: var(--text-color);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.btnspendmeacoffee::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-image: url("/img/metamask_icon.png");
+    background-size: cover;
+}
+
+.btnspendmeacoffee:hover {
+    background-color: var(--buttonhover);
+}
+
+/* Right hero section */
+.hero-section-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px;
+    background-color: var(--content-Background-Color);
+
+}
+
+.coffee-image {
+    display: flex;
+    width: 300px;
+    height: auto;
+    margin-left: -150px;
+}
+
+/* Coffe-Spender Message Board */
+.spender-message-container {
+    background-color: var(--body-Background-Color);
+    padding-bottom: 20px;
+}
+
+.spender-message-header {
+    display: grid;
+    text-align: center;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 50px;
+    cursor: default;
+    user-select: none;
+
+}
+
+.spender-message-section {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: var(--content-Background-Color);
+
+
+}
+
+.comment-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.comment-list li {
+    border-top: 1px solid var(--text-color);
+    padding: 10px;
+    cursor: default;
+    user-select: none;
+}
+
+.comment-list li:first-child {
+    border-top: none;
+}
+
+.comment-list .kommentar-name {
+    font-weight: bold;
+    margin-right: 10px;
+    color: var(--text-color);
+}
+
+.comment-list .kommentar-text {
+    margin-left: 10px;
+    color: var(--text-color);
+}
+
+Footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    bottom: 0;
+    height: 40px;
+    background-color: var(--header-background-color);
+    color: var(--text-color);
+    grid-row: 3;
+    grid-column: 1 / -1;
+}
+
+.copyright {
+    text-align: right;
+    margin-right: 20px;
+    cursor: default;
+    user-select: none;
+}
+
+.social-media a {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    color: var(--text-color);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.social-media a::before {
+    content: "";
+    display: inline-block;
+    background-image: url('../img/discord-logo.svg');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.social-media a:hover {
+    color: var(--link-color-on-hover);
+}
+
