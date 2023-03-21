@@ -1,0 +1,42 @@
+.hero-section-contact{
+    display: flex;
+    background-color: var(--body-Background-Color);
+}
+.hero-section-tab{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+background-color: var(--content-Background-Color);
+}
+
+.contact-header{
+    color: var(--text-color);
+    text-align: center;
+    font-weight: bold;
+    font-size: var(--h2-Desktop-Size);
+    cursor: default;
+    user-select: none;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+.contact-text {
+color: var(--text-color);
+text-align: center;
+font-size: var(--p-Desktop-Size);
+    cursor: default;
+    user-select: none;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}

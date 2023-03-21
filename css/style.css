@@ -35,6 +35,13 @@ nav .mainMenu li a:hover {
     color: var(--text-color-on-Hover);
 
 }
+nav .mainMenu li a.active {
+    font-weight: bold;
+    color: var(--link-color-on-hover);
+    cursor: pointer;
+    cursor: default;
+    user-select: none;
+}
 
 nav .openMenu {
     font-size: 2rem;
@@ -214,11 +221,12 @@ nav .logo {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 50px;
-    padding-left: 200px;
-    padding-right: 200px;
+    width: auto;
     padding-top: 50px;
     padding-bottom: 100px;
     background-color: var(--content-Background-Color);
+    padding-left: 5rem;
+    padding-right: 5rem;
 
 
 }
@@ -231,7 +239,7 @@ nav .logo {
 
 .comment-list li {
     border-top: 1px solid var(--text-color);
-    padding: 10px;
+    padding: 12px;
     cursor: default;
     user-select: none;
 }
@@ -242,11 +250,13 @@ nav .logo {
 
 .comment-list .kommentar-name {
     font-weight: bold;
+    font-size: var(--p-Desktop-Size);
     margin-right: 10px;
     color: var(--text-color);
 }
 
 .comment-list .kommentar-text {
+    font-size: var(--p-Desktop-Size);
     margin-left: 10px;
     color: var(--text-color);
 }

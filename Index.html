@@ -19,9 +19,9 @@
         </div>
         <div class="openMenu"><i class="fa fa-bars"></i></div>
         <ul class="mainMenu">
-            <li><a href="#" class="menuhome lang" data-lang-key="MenuHome"></a></li>
-            <li><a href="Project.html" class="lang" data-lang-key="MenuProject"></a></li>
-            <li><a href="#" class="lang" data-lang-key="MenuContact"></a></li>
+            <li><a href="index.html" class="menuhome lang" data-lang-key="MenuHome"></a></li>
+            <li><a href="project.html" class="lang" data-lang-key="MenuProject"></a></li>
+            <li><a href="contact.html" class="lang" data-lang-key="MenuContact"></a></li>
             <div class="closeMenu"><i class="fa fa-times"></i></div>
             <span class="icons">
                 <i class="fab fa-facebook"></i>
@@ -31,28 +31,26 @@
             <button class="btnconnectmetamask lang" data-lang-key="BtnConnectWallet"></button>
         </div>
     </nav>
-    <main class="main-content">
-        <div class="hero-section">
-            <div class="hero-section-left">
-                <div class="gap">
-                    <h2><span class="hero-titel lang" id="herotitel"></span></h2>
-                </div>
-                <p><span class="herotext lang" data-lang-key="HeroText"></span></p>
-                <button class="btnspendmeacoffee lang" data-lang-key="BtnSpendMeaCoffee"></button>
+    <div class="hero-section">
+        <div class="hero-section-left">
+            <div class="gap">
+                <h2><span class="hero-titel lang" id="herotitel"></span></h2>
             </div>
-            <div class="hero-section-right">
-                <img class="coffee-image" src="img/coffee.png" alt="Coffee">
-            </div>
+            <p><span class="herotext lang" data-lang-key="HeroText"></span></p>
+            <button class="btnspendmeacoffee lang" data-lang-key="BtnSpendMeaCoffee"></button>
         </div>
-        <section class="spender-message-container">
-            <div class="spender-message-section">
-                <h2 class="spender-message-header lang" data-lang-key="SpenderMessageTitel"></h2>
-                <ul class="comment-list">
-                    <!-- Hier werden die Kommentare dynamisch eingefügt -->
-                </ul>
-            </div>
-        </section>
-    </main>
+        <div class="hero-section-right">
+            <img class="coffee-image" src="img/coffee.png" alt="Coffee">
+        </div>
+    </div>
+    <div class="spender-message-container">
+        <div class="spender-message-section">
+            <h2 class="spender-message-header lang" data-lang-key="SpenderMessageTitel"></h2>
+            <ul class="comment-list">
+                <!-- Hier werden die Kommentare dynamisch eingefügt -->
+            </ul>
+        </div>
+    </div>
     <!--Footer-->
     <footer>
         <div class="social-media">
@@ -67,6 +65,7 @@
     <script src="js/language.js"></script>
     <script src="js/textwriting.js"></script>
     <script src="js/hamburger-menu.js"></script>
+    <script src="js/active-nav.js"></script>
     <script src="js/colors-text-sizes.js"></script>
     <script src="js/comments.js"></script>
 </body>
