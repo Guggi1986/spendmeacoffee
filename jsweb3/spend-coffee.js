@@ -73,21 +73,18 @@
             <img src="img/coffee-spending.png" alt="Klein" class="coffee-image small">
             <h4>Klein</h4>
             <span class="price"></span>
-            <p>Hier ist eine kurze Beschreibung der kleinen Kaffeeoption.</p>
             <button class="select-button">Auswählen</button>
           </div>
           <div class="coffee-option">
             <img src="img/coffee-spending.png" alt="Mittel" class="coffee-image medium ">
             <h4>Mittel</h4>
             <span class="price"></span>
-            <p>Hier ist eine kurze Beschreibung der mittleren Kaffeeoption.</p>
             <button class="select-button">Auswählen</button>
           </div>
           <div class="coffee-option">
             <img src="img/coffee-spending.png" alt="Groß" class="coffee-image large ">
             <h4>Groß</h4>
             <span class="price"></span>
-            <p>Hier ist eine kurze Beschreibung der großen Kaffeeoption.</p>
             <button class="select-button">Auswählen</button>
           </div>
         </div>
