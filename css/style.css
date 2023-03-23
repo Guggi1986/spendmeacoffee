@@ -108,17 +108,35 @@ nav .logo {
     cursor: pointer;
 }
 /* Dropdown styles */
-.dropdown-content {
-    background-image: var(--profile-menu-background-color);
-    border-radius: 8px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    padding: 12px 16px;
-    position: absolute;
-    right: 50px;
-    top: 80px;
-    z-index: 1;
-    padding-top: 30px;
-}
+/* Fade-In Animation Keyframes */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .dropdown-content {
+      background-image: var(--profile-menu-background-color);
+      border-radius: 8px;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      padding: 12px 16px;
+      position: absolute;
+      right: 50px;
+      top: 80px;
+      z-index: 1;
+      padding-top: 30px;
+      cursor: default;
+      user-select: none;
+      
+      /* Fade-In Animation */
+      animation: fadeIn 0.3s ease-in-out;
+      opacity: 0;
+      animation-fill-mode: forwards;
+  }
+  
 
 .addresslabel,
 .balancelabel {
@@ -232,6 +250,127 @@ nav .logo {
 
 .btnspendmeacoffee:hover {
     background-image: var(--buttonhover);
+}
+/* spend me a coffee pop up */
+.coffee-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: var(--button);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+    padding-left: 50px;
+    padding-right: 50px;;
+    padding-bottom: 75px;
+    border: 2px solid var(--text-color);
+}
+.popupheader{
+    line-height: 1.25;
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    color: var(--text-color);
+    font-size: var(--h2-Desktop-Size);
+    font-family: Arial, sans-serif;
+    cursor: default;
+    user-select: none;
+    padding-bottom: 50px;
+}
+.coffee-options-container {
+    display: flex;
+    justify-content: center;
+}
+
+.coffee-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 10px;
+    width: 200px; /* Feste Breite für alle Karten */
+    max-width: 200px;
+}
+
+.coffee-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px; /* Verstellen Sie diese Größe, um den Platz für das größte Bild zu erhöhen */
+}
+
+.coffee-image {
+    width: auto;
+    height: auto;
+}
+
+.coffee-image.small {
+    max-width: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.coffee-image.medium {
+    max-width: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.coffee-image.large {
+    max-width: 150px;
+}
+
+.coffee-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coffee-option h4 {
+    margin: 10px 0;
+}
+
+.select-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.select-button:hover {
+    background-color: #0056b3;
+}
+
+.coffee-popup-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    color: var(--text-color);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 20px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.coffee-popup-close:hover {
+    color: #888;
 }
 
 /* Right hero section */

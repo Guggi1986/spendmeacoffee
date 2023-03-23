@@ -11,7 +11,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/stylecontact.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
         integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
-</head>
+    </head>
 
 <body>
     <nav>
@@ -28,14 +28,14 @@
                 <i class="fab fa-facebook"></i>
             </span>
         </ul>
-        <div>
+        <div id="walletContainer">
             <button class="btnconnectmetamask lang" id="connectButton" data-lang-key="BtnConnectWallet"></button>
             <div id="profile" style="display: none;">
                 <img src="img/profile.png" alt="Profile" id="profileImage">
                 <div id="dropdown" class="dropdown-content" style="display: none;">
-                    <p id="addressLabel" class="addresslabel"></p>
+                    <p id="addressLabel" class="addresslabel lang" data-lang-key="AdressLabel"></p>
                     <p id="addressValue" class="addressvalue"></p>
-                    <p id="balanceLabel" class="balancelabel"></p>
+                    <p id="balanceLabel" class="addresslabel lang" data-lang-key="BalanceLabel"></p>
                     <p id="balanceValue" class="balancevalue"></p>
                 </div>
             </div>
@@ -88,9 +88,7 @@
     <script src="js/active-nav.js"></script>
     <script src="js/colors-text-sizes.js"></script>
     <script src="jsweb3/connect-wallet.js"></script>
-    <script src="jsweb3/wallet-cookie.js"></script>
-    
-    </script>
+    <script src="jsweb3/spend-coffee.js"></script>
 </body>
 
 </html>
