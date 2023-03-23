@@ -5,13 +5,13 @@ const themes = {
   contentBackgroundColor: "#0D1117",
 
   textColor: "#ffffff",
-  textColorOnHover: "#28a745",
+  textColorOnHover: "#254A8A",
   
   linkColor: "#ffffff",
-  linkColorOnHover: "#28a745",
+  linkColorOnHover: "#254A8A",
 
-  button: "#238636",
-  buttonHover: "#28a745",
+  button: "linear-gradient(90deg, #1e3c72 0%, #2a5298 100%)",
+  buttonHover: "linear-gradient(90deg, #2a5298 0%, #1e3c72 100%)",
 
   hamburgerMenuBackgroundColor: "#010409",
 

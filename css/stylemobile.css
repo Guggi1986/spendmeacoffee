@@ -1,4 +1,4 @@
-@media (max-width: 950px) {    
+@media (max-width: 950px) {
     nav .mainMenu {
         display: none;
         height: 100vh;
@@ -38,7 +38,7 @@
 
     .hero-section-left {
         display: flex;
-        width:auto;
+        width: auto;
         max-width: 100%;
         justify-content: center;
         margin-right: 50px;
@@ -46,28 +46,29 @@
         padding: 0;
 
     }
-    
+
 
     .hero-section-right {
-       display: flex;
-       width: auto;
-       justify-content: center;
-       margin-left: 50px;
-    }
-    .gap {
-        margin-top:35px;
+        display: flex;
+        width: auto;
+        justify-content: center;
+        margin-left: 50px;
     }
 
-#herotitel {
-    width: 100%;
-    padding: 20px;
-    height: auto;
-    color: var(--text-color);
-    font-size: var(--h2-Mobile-Size);
-    font-family: Arial, sans-serif; 
-    cursor: default;
-    user-select: none;
- }
+    .gap {
+        margin-top: 35px;
+    }
+
+    #herotitel {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+        color: var(--text-color);
+        font-size: var(--h2-Mobile-Size);
+        font-family: Arial, sans-serif;
+        cursor: default;
+        user-select: none;
+    }
 
     .herotext {
         display: flex;
@@ -76,17 +77,41 @@
         margin-left: 35px;
         margin-right: 35px;
         margin-bottom: 15px;
- 
+
     }
 
-   .coffee-image {
-    display: flex;
+    .coffee-image {
+        display: flex;
 
-    width: 300px;
-    height: auto;
+        width: 300px;
+        height: auto;
 
 
 
     }
 }
+/* contact.html */
+.contact-titel {
+    width: 100%;
+    height: auto;
+    font-size: var(--h2-Mobile-Size) !important;
+    cursor: default;
+    user-select: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
 
+.contact-text {
+    font-size: var(--p-Mobile-Size)!important;
+    margin: 0 !important;
+    padding: 0 !important;
+    padding-top: 50px !important;
+}
+
+
+@media (max-width: 768px) {
+    .btnconnectmetamask{
+        width: 75%;
+    }
+   
+}
