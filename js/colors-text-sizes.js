@@ -11,9 +11,12 @@ const themes = {
   linkColorOnHover: "#254A8A",
 
   button: "linear-gradient(90deg, #1e3c72 0%, #2a5298 100%)",
-  buttonHover: "linear-gradient(90deg, #2a5298 0%, #1e3c72 100%)",
+  buttonHover: "linear-gradient(90deg, #2a5298 100%, #1e3c72 0%)",
 
   hamburgerMenuBackgroundColor: "#010409",
+
+  profileMenuBackgroundColor: "linear-gradient(90deg, #1e3c72 0%, #2a5298 100%)",
+  profileLabelColor: "#161b22",
 
   //Textsizes
   h1DesktopSize: "35px",
@@ -54,6 +57,9 @@ root.style.setProperty("--button", themes.button);
 root.style.setProperty("--buttonhover", themes.buttonHover);
 
 root.style.setProperty("--hamburger-menu-background-color", themes.hamburgerMenuBackgroundColor);
+
+root.style.setProperty("--profile-menu-background-color", themes.profileMenuBackgroundColor);
+root.style.setProperty("--profile-label-color", themes.profileLabelColor);
 
 // Set CSS variables to the corresponding textsizes values from the themes object
 
